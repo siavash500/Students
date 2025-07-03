@@ -1,0 +1,136 @@
+/* 
+
+
+
+*/
+
+
+
+.students{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid rgba(90, 89, 89, 0.726);
+    border-radius: 5px ;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 70px;
+
+}
+.students label{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 600;
+
+}
+.students form input {
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 15px ;
+    direction: rtl;
+
+}
+
+.students .ltr{
+    direction: ltr;
+    text-transform: none;
+    
+}
+
+form p {
+    font-size: 15px;
+    word-spacing: 1px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.form-buttons{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 10px;
+    margin-top: 25px;
+}
+.form-buttons:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    transition: 0.5s;
+    background: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media (min-width:500px) {
+
+    .students{
+        width: 450px; 
+    }
+    
+}
+
+
+/* formedone */
+
+.continermassage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(37, 37, 37, 0.774);
+    display: flex;
+    align-items: flex-start;
+    
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.continermassage p {
+    background: #fff;
+    padding: 32px 48px;
+    border-radius: 12px;
+    font-size: 22px;
+    color: #333;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.133);
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.continermassage.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+#formdone {
+        background: green;
+        border-radius: 4px;
+        font-size: 18px;
+        color: rgb(231, 231, 231);
+        box-shadow: 0 4px 24px #0002;
+        width: 97.5%;
+        margin: 17px auto;
+        display: flex;
+        justify-content: right;
+        padding: 10px 10px;
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+}
+      
+.fade-in {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+  
